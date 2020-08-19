@@ -1,10 +1,12 @@
 import React from 'react';
+import Post from './components/post';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         Basic testing
+        <Post/>
       </header>
     </div>
   );
