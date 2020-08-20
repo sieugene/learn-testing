@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component Render should render component 1`] = `
+<div
+  className="selectWrapper"
+>
+  <div
+    className="placeholder"
+  >
+    "No items"
+  </div>
+</div>
+`;

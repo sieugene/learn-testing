@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title component Render should render component with Props 1`] = `
+<h1
+  className="title"
+>
+  test title
+</h1>
+`;
+
+exports[`Title component Render should render component without Props 1`] = `
+<h1
+  className="title"
+>
+  Simple title
+</h1>
+`;
