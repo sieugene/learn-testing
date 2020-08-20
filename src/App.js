@@ -1,5 +1,6 @@
 import React from 'react';
 import Post from './components/post';
+import Posts from './components/Posts/Posts';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
         Basic testing
         <Post/>
+        <Posts/>
       </header>
     </div>
   );
