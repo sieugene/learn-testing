@@ -12,6 +12,14 @@ describe(("Input component"), () => {
             const result = Input.defaultProps.onChange();
             expect(result).toBe(undefined)
         })
+        it("should call onChange method", () => {
+            //способ с моками
+            const mockCallBack = jest.fn()
+            const component = shallow(<Input onChange={mockCallBack}/>)
+            expect(mockCallBack.mock.calls.length).toEqual(0)
+            component.find('.input').simulate('change')
+            expect(mockCallBack.mock.calls.length).toEqual(1)
+        }) 
         it("should use default props onKeyPress", () => {
             const result = Input.defaultProps.onKeyPress();
             expect(result).toBe(undefined)
