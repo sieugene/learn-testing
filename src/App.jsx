@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import Post from './components/post';
 import Posts from './components/Posts/Posts';
-import Title from './components/Title/Title';
-import Select from './components/Select/Select';
 
 function App() {
   const [value, setValue] = useState(null)
@@ -17,10 +14,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         Basic testing
-        <Post/>
+        {/* <Select handleChange={handleChange} value={value} options={options}/> */}
         <Posts/>
-        <Title/>
-        <Select handleChange={handleChange} value={value} options={options}/>
       </header>
     </div>
   );
