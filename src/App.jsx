@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Posts from './components/Posts/Posts';
+import Info from './components/Info/Info';
 
 function App() {
   const [value, setValue] = useState(null)
@@ -16,6 +17,7 @@ function App() {
         Basic testing
         {/* <Select handleChange={handleChange} value={value} options={options}/> */}
         <Posts/>
+        <Info/>
       </header>
     </div>
   );
